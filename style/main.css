@@ -88,6 +88,10 @@ header .sub-head .github-qr {
     height: 80px;
 }
 
+header .sub-head .twitter-qr {
+    width: 80px;
+    height: 80px;
+}
 
 header .sub-head div {
     margin-left: 0;
@@ -123,7 +127,7 @@ header .sub-head .resume {
     font-size: 0.8em;
 }
 
-.career h1 {
+h1 {
     background-color: #F8F8F8;
     text-transform: uppercase;
     font-size: 1.3em;
@@ -132,7 +136,7 @@ header .sub-head .resume {
     padding: 5px;
 }
 
-.career .career-content {
+.article-content {
     display: flex;
     flex-flow: row nowrap;
     padding-left: 10px;
@@ -140,64 +144,148 @@ header .sub-head .resume {
     margin-bottom: 8px;
 }
 
-.left-col {
-    text-align: right;
-    padding-right: 10px;
+.article-content article:not(:first-child) {
+    margin-left: 5px;
 }
 
-.right-col {
-    text-align: left;
-    padding-left: 10px;
-}
-
-.career ul {
+.article-content ul {
     text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.career .left-col ul {
-    text-align: right;
-}
-
-.career .right-col ul {
-    text-align: left;
-}
-
-.career ul li {
+.article-content ul li {
     display: inline;
 }
 
-.career ul li:after
+.article-content ul li:after
 {
     color: black;
     content: ' | ';
 }
-.career ul li:last-child:after
+.article-content ul li:last-child:after
 {
     content: '';
 }
 
-.career .job-company {
+.article-content .article-company {
     color: #32B9EE;
     text-transform: uppercase;
     font-size: 0.9em;
 }
 
-.career .job-title {
+.article-content .article-company .company-darker {
+    color: #2c74a1;
+}
+
+.article-content .article-title {
     text-transform: uppercase;
     font-size: 0.9em;
 }
 
-.career .job-duration {
+.article-content .article-duration {
     color: #BEBEBE;
     text-transform: uppercase;
     font-size: 0.9em;
 }
 
-.career .job-description {
+.article-content .article-description {
     color: #818181;
     font-size: 0.8em;
 }
 
+.skills h1 {
+    margin-bottom: 0;
+    background-color: #F2F2F2;
+}
+
+.skills-row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.skills-row h2 {
+    background-color: #F8F8F8;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    padding: 0;
+    margin-top: 4px;
+}
+
+.skill-dev, .skill-ops {
+    width: 50%;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-right .skill-label {
+    padding-right: 15px;
+    padding-left: 0 !important;
+}
+
+.skill-content {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.skill-content .skill-level {
+    color: #32B9EE;
+    font-size: 1.2em;
+    width: 55%;
+}
+
+.skill-content .skill-label {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 5px;
+    width: 45%;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.footer .languages {
+    width: 50%;
+}
+
+.footer .hobbies {
+    width: 50%;
+    text-align: center;
+}
+
+.lang-content {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.lang-content .lang-level {
+    color: #32B9EE;
+    font-size: 1.2em;
+    margin-left: 10px;
+    width: 50%;
+    text-align: right;
+}
+
+.lang-content .lang-label {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 5px;
+    width: 50%;
+}
+
+.hobbies ul {
+    list-style: none;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
